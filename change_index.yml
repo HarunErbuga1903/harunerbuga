@@ -1,0 +1,25 @@
+name: Change Index File
+
+on:
+  push:
+    branches:
+      - main  # Veya kullandığınız ana dal adı
+
+jobs:
+  change-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Change Index File
+        run: |
+          mv kayit.php index.html
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Change index.html to kayit.php"
+          git push

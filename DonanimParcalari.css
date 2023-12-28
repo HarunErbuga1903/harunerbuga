@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80');
+    background-size: cover;
+}
+
+.product-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Flexbox kullanarak içeriği yatay düzende sırala */
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+.product-image {
+    max-width: 85px;
+    max-height: 85px;
+    width: 85px;
+    margin-left: 15px; /* Yazıdan sonra 15px boşluk bırak */
+}
+
+.product-details {
+    margin-top: 15px;
+    flex-grow: 1; /* Yazı alanının genişlemesine izin ver */
+}
+
+h2, p {
+    margin: 0;
+}
+
+.model-info {
+    font-style: italic;
+    color: #888;
+}

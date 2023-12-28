@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>İlk Web Sitem</title>
+     
+    <style>
+        /* Stil kurallarını buraya ekleyebilirsiniz. */
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="javascript:void(0);" onclick="goToYazilimPage()">Yazılım</a> |
+        <a href="javascript:void(0);" onclick="goToDonanimPage()">Donanım</a> |
+        <a href="javascript:void(0);" onclick="goToHakkimdaPage()">Hakkımda</a> |
+        <a href="javascript:void(0);" onclick="goToIletisimPage()">İletişim</a> |
+        <a href="javascript:void(0);" onclick="redirectToKayitPage()">Kayıt</a>
+    </nav>
+
+    <div class="section" id="yazilim">
+        <h1>Yazılım</h1>
+        <p>Bu bölüm yazılım ile ilgili içerikleri içerir.</p>
+    </div>
+
+    <div class="section" id="donanim">
+        <h1>Donanım</h1>
+        <p>Bu bölüm donanım ile ilgili içerikleri içerir.</p>
+    </div>
+
+    <div class="section" id="hakkimda">
+        <h1>Hakkımda</h1>
+        <p>Adım Harun Erbuğa.</p>
+    </div>
+
+    <div class="section" id="iletisim">  
+        <h1>İletişim</h1>
+        <p>Email: harun@example.com</p>
+        <p>Telefon: 123-456-7890</p>
+    </div>
+
+    <script>
+        function goToYazilimPage() {
+            window.location.href = "yazilim.html";
+        }
+
+        function goToDonanimPage() {
+            window.location.href = "donanim.html";
+        }
+
+        function goToHakkimdaPage() {
+            showSection('hakkimda');
+        }
+
+        function goToIletisimPage() {
+            showSection('iletisim');
+        }
+
+        function redirectToKayitPage() {
+            console.log("Butona tıklandı");
+            window.location.href = "kayit.php";
+        }
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].classList.remove('fade-in');
+                sections[i].style.display = 'none';
+            }
+
+            var sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'inline-block';
+            sectionToShow.classList.add('fade-in');
+        }
+    </script>
+</body>
+</html>

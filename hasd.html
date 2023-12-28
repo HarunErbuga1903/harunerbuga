@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buton Yönlendirme</title>
+</head>
+<body>
+
+    <h1>Merhaba! Butona tıkla ve yönlendirilsin.</h1>
+
+    <!-- Buton ekleyelim -->
+    <button id="yonlendirButton">Yönlendir</button>
+
+    <script>
+        // Butona tıklanınca çalışacak JavaScript kodu
+        document.getElementById('yonlendirButton').addEventListener('click', function() {
+            // Yönlendirme işlemi
+            window.location.href = 'kayit.php';
+        });
+    </script>
+
+</body>
+</html>

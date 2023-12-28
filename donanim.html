@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donanım Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff; /* Body arka plan rengi */
+            color: #000000;
+        }
+
+        header {
+            background-color: #ffffff; /* Header arka plan rengi */
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        header .menu-icon {
+            cursor: pointer;
+        }
+
+        header .menu-icon img {
+            width: 30px;
+            height: auto;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            margin-right: auto;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: 2px solid #007BFF;
+        }
+
+        .button-container a:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .icon-container {
+            margin-left: auto;
+            margin-right: 10px; /* Sağ tarafta boşluk bırakmak için */
+        }
+
+        .frame-container {
+            position: relative;
+        }
+
+        .frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 10px solid #fffcfc;
+            box-sizing: border-box;
+            z-index: -1;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #000000; /* Çerçeve rengi */
+            border-radius: 10px;
+            background-color: #ffffff; /* İçerik arka plan rengi */
+        }
+
+        section h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            color: #000000; /* Yazı rengi */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="menu-icon" onclick="goToIndex()">
+                <img src="resimler/custom-icon.svg" alt="Menu Icon">
+            </div>
+        </div>
+        <div class="icon-container">
+            <div class="button-container">
+                <a href="DonanimParcalari.html">Donanım Parçaları ve Fiyatları</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="frame-container">
+        <div class="frame"></div>
+    </div>
+
+    <section>
+        <h2>Donanım Nedir?</h2>
+        <p>Donanım, bir bilgisayar veya elektronik cihazın fiziksel parçalarını ifade eder. Yazılımla birlikte çalışarak bilgisayarın veya cihazın işlevsel olmasını sağlar. Donanım, genellikle sabit diskler, işlemciler, bellekler, anakartlar, ekran kartları gibi parçalardan oluşur.</p>
+        
+        <h2>Donanım Çeşitleri Nelerdir?</h2>
+        
+        <b>Bilgisayar Donanımları</b>
+        <p>Bilgisayar donanımı, kasa, merkezi işlem birimi(İşlemci), monitör, fare, klavye, bilgisayar veri depolama, Ekran kartı, ses kartı, hoparlörler ve anakart gibi bir bilgisayarı oluşturan fiziksel parçaların genel adıdır</p>
+        
+        <b>Akıllı Cihazlar</b>
+        <p>Akıllı telefonlar, tabletler, akıllı saatler gibi taşınabilir cihazlar, kendi donanımlarını içerir. Bu cihazlar genellikle küçük boyutlu, enerji verimli ve yüksek performanslı donanımlara sahiptir.</p>
+        
+        <b>Ağ Donanımları</b>
+        <p>Ağ donanımları, bilgisayarların ağlar arasında iletişim kurmasını sağlar. Router'lar, switch'ler, modemler bu kategoriye örnektir.</p>
+        
+        <b>Gömülü Sistemler</b>
+        <p>Gömülü sistemler, genellikle özel amaçlı cihazlarda bulunan donanım ve yazılım kombinasyonlarıdır. Örneğin, bir mikrodalga fırının kontrol sistemi bir gömülü sistemdir.</p>
+
+        <h2>Donanımın Önemi</h2>
+
+        <p>Donanım, bilgisayar ve elektronik cihazların temel yapı taşıdır. Kaliteli ve uyumlu donanım, cihazların daha verimli çalışmasını sağlar. Ayrıca, donanımın güncellenmesi veya yükseltilmesi, cihazların performansını artırabilir ve daha yeni özellikleri desteklemelerini sağlar.</p>
+
+        <p>İyi bir donanım altyapısı, yazılımın daha etkili çalışmasına da olanak tanır. Bu nedenle, hem yazılım hem de donanımın birbiriyle uyumlu olması önemlidir.</p>
+    </section>
+
+    <script>
+        function goToIndex() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
